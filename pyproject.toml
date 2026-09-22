@@ -3,7 +3,7 @@ name = "open-llm-vtuber"
 version = "1.2.1"
 description = "Talk to any LLM with hands-free voice interaction, voice interruption, and Live2D taking face running locally across platforms"
 readme = "README.md"
-requires-python = ">=3.10,<3.13"
+requires-python = ">=3.10"
 dependencies = [
     "anthropic>=0.40.0",
     "azure-cognitiveservices-speech>=1.41.1",
@@ -71,7 +71,7 @@ pythonpath = ["."]
 addopts = "-v --tb=short"
 
 [tool.ruff]
-target-version = "py310"
+target-version = "py314"
 
 [tool.ruff.lint]
 per-file-ignores = { "scripts/run_bilibili_live.py" = ["E402"] }
